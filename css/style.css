@@ -108,4 +108,7 @@ input {
 
 #map{
 	display: block;
+	margin: auto;
+	width:750px;
+	height:550px;
 }
