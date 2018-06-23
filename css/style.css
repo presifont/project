@@ -1,0 +1,111 @@
+
+body {
+font-family: Papyrus;
+background-color: #E4D2BE;
+}
+
+#header {
+background-color: #A38462;
+}
+
+h1 {
+border-width: 3px;
+text-align: center;
+z-index: 1;
+margin: auto;
+color: #FFF1E0;
+font-weight: bolder;
+}
+
+.main {
+text-align: center;
+font-size: 1em;
+padding-top: -10px;
+margin-top: 0px;
+font-style: italic;
+	font-weight: bolder;
+}
+
+#image1 {
+display: block;
+height: 630px;
+width: 80%;
+margin: auto;
+}
+
+
+.existing {
+float: right;
+}
+
+.box {
+display: inline-block;
+
+width: 100%;
+margin: 0 auto;
+
+
+
+}
+
+.content {
+display: inline-block;
+
+height: 210px;
+width: 30%;
+margin: 15px 70px;
+position: top;
+background-color: #C2A98D;
+border-radius: 3%;
+
+}
+
+.border {
+	display: inline-block;
+
+width: 100%;
+margin: 20px
+}
+.reviews {
+	display: inline-block;
+	height: 150px;
+width: 40%;
+padding-top: 10%;
+float: right;
+margin-right: 10%;
+
+}
+.menu-options {
+text-align: center;
+font-weight: bold;
+}
+label{
+margin: 35px;
+
+}
+
+#image2 {
+	width: 35%;
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 20px;
+
+}
+button {
+	margin: 10px 10px 10px 40px;
+}
+
+#menu {
+text-align: center;
+border-width: 3px;
+
+background-color: #C2A98D;
+}
+
+input {
+	margin-left: 20px;
+}
+
+#map{
+	display: block;
+}

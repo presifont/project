@@ -1,0 +1,44 @@
+
+
+function endsWith(str, suffix) {
+    return str.indexOf(suffix, str.length - suffix.length) !== -1;
+}
+
+var sJSON = JSON.parse(INPUT)
+var sRepl = ""
+
+for (var key in sJSON.Questionnaire[0])
+{
+if (endsWith(key, "_Revision"))
+{
+continue
+}
+
+if (key.indexOf("<< + DBMap.Value + >>") > -1) 
+{
+sRepl = key.replace("<< + DBMap.Value + >>","<< + DBMap.Field + >>")
+
+if (sJSON.Questionnaire[0].hasOwnProperty(sRepl))
+{
+var sRev1 = sJSON.Questionnaire[0][sRepl + "_Revision"]
+var sRev2 = sJSON.Questionnaire[0][key + "_Revision"]
+
+if(sRev2 < sRev1)
+{
+delete sJSON.Questionnaire[0][key]
+delete sJSON.Questionnaire[0][key + "_Revision"]
+continue
+}
+}
+
+var sValue = sJSON.Questionnaire[0][key]
+var sRevp = sJSON.Questionnaire[0][key + "_Revision"]
+delete sJSON.Questionnaire[0][key]
+delete sJSON.Questionnaire[0][key + "_Revision"]
+sJSON.Questionnaire[0][sRepl] = sValue
+sJSON.Questionnaire[0][sRepl + "_Revision"] = sRevp
+
+
+}
+}
+OUTPUT = JSON.stringify(sJSON)

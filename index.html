@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Sublime Project</title>
+</head>
+
+<body>
+	<div id="header">
+		<h1>Monk's Cafe</h1>
+		<p class="main">"The Coffee Shop"</p>
+	</div>
+	<div>
+		<img src="images/toms-restaurant.jpg" alt="outside" id="image1">
+	</div>
+
+	<div>
+		<h2 id="menu">Reservations</h2>
+	</div>
+
+	<div class="box">
+		
+		<div class="content">
+			<p class="menu-options">Make a Reservation</p>
+			<div>		
+				<form>
+					<div >
+						<label id="name-label" for="name"> Name: </label>
+						<input type="text" id="name" placeholder="Enter your name">
+					</div>
+					<div>
+						<label id="date-label" for="date"> Date: </label>
+						<input type="text" id="date" placeholder="Day">
+					</div>
+					<div>
+						<button>Confirm Reservation</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		
+		<div class="content existing">
+			<p class="menu-options">Existing Reservations</p>
+
+			<div>
+				<div>
+					<table>
+						<thead>
+							<th>Person</th>
+							<th>Day</th>
+						</thead>
+						<tbody> [ form data will publish here ] </tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<h2 id="menu">
+		Come Dine with Us
+	</h2>
+</div>
+
+<div>
+	<div id="map" class="col-md-12" style="height:500px">
+	</div>
+</div>
+
+
+
+<div class="border">
+	<div id="reviews">
+		<img src="images/jerry.jpg" alt="Jerry Seinfeld" id="image2">
+		<div class="existing">
+
+			<div class="reviews">
+				<h3>Customer Reviews</h3>
+				<p id="cust-reviews">
+
+					“Big lettuce, big carrots, tomatoes like volleyballs.”
+					— Jerry Seinfeld, on The BIG 
+				</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div>
+	<a href="https://www.freepik.com/free-photos-vectors/background">
+		Background image created by Mrsiraphol - Freepik.com
+	</a>
+</div>
+<!--Jquery-->   
+<script src="js/jquery-3.0.0.js"></script>
+<!--javascript-->
+<script src="js/main.js"></script>
+<!--Google Maps-->
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2kBYMponeI7uzWB-k5zpac9oCWN8LtA0&callback=initMap"
+type="text/javascript"></script>
+
+</body>
+</html>
+
+
+
+
+
