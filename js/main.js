@@ -10,7 +10,7 @@
   };
   firebase.initializeApp(config);
 
-//
+//populates user input
 var reservationData = {};
 
 //Initialize Map

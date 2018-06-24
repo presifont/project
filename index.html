@@ -9,11 +9,11 @@
 
 <body>
 	<div id="header">
-		<h1>Monk's Cafe</h1>
-		<p class="main">"The Coffee Shop"</p>
+		<h1>Dapper D's Diner</h1>
+		<p class="main">"Home of the Happy Belly"</p>
 	</div>
 	<div>
-		<img src="images/toms-restaurant.jpg" alt="outside" id="image1">
+		<img src="images/inside.jpg" alt="inside of restaurant" id="image1">
 	</div>
 
 	<div>
@@ -26,13 +26,23 @@
 			<p class="menu-options">Make a Reservation</p>
 			<div>		
 				<form>
-					<div >
-						<label id="name-label" for="name"> Name: </label>
-						<input type="text" id="name" placeholder="Enter your name">
-					</div>
 					<div>
-						<label id="date-label" for="date"> Date: </label>
-						<input type="text" id="date" placeholder="Day">
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="res_name" placeholder="Enter your name">
+					</div>
+					<div class="dropdown">
+						<button class="dropbtn"> Select A Day </button>
+						<div class="dropdown-content">
+							<ul>
+								<li>Sunday</li>
+								<li>Monday</li>
+								<li>Tuesday</li>
+								<li>Wednesday</li>
+								<li>Thursday</li>
+								<li>Friday</li>
+								<li>Saturday</li>
+							</ul>
+						</div>				
 					</div>
 					<div>
 						<button>Confirm Reservation</button>
@@ -74,7 +84,7 @@
 
 <div class="border">
 	<div id="reviews">
-		<img src="images/jerry.jpg" alt="Jerry Seinfeld" id="image2">
+		<img src="images/laugh.jpg" alt="child eats" id="image2">
 		<div class="existing">
 
 			<div class="reviews">
@@ -99,11 +109,11 @@
 <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
 
 <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="js/jquery-3.0.0.js"></script>
 <!-- bootstrap js -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- handlebars -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+<script src="js/handlebars-v4.0.11.js"></script>
 <!-- custom js -->
 <script src="js/main.js"></script>
 
