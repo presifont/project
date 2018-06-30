@@ -5,85 +5,85 @@ background-color: #E4D2BE;
 }
 
 #header {
+display: flex;
+flex-direction: column;
 background-color: #A38462;
 }
 
 h1 {
-border-width: 3px;
-text-align: center;
 z-index: 1;
 margin: auto;
 color: #FFF1E0;
 font-weight: bolder;
+
 }
 
 .main {
-text-align: center;
-font-size: 1em;
-padding-top: -10px;
-margin-top: 0px;
-font-style: italic;
-	font-weight: bolder;
-}
-
-#image1 {
-display: block;
-height: 630px;
-width: 80%;
 margin: auto;
+font-style: italic;
+font-weight: bolder;
+}
+
+.image-container {
+	display: flex;
+	justify-content: center;
+
+}
+#image1 {
+align-self: flex-end;
+max-width: 1000px;
+max-height: 500px;
 }
 
 
-.existing {
-float: right;
-}
+
 
 .box {
-display: inline-block;
-
-width: 100%;
-margin: 0 auto;
-
-
+display: flex;
+justify-content: space-around;
 }
+
+
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+display: ;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+gi
+}
+
+.dropbtn:hover, .dropbtn:focus {
+background-color: #2980B9;
 }
 .dropdown {
-	float: left;
-  overflow: hidden;
-}
-.content {
-display: inline-block;
 
-height: 210px;
-width: 30%;
-margin: 15px 70px;
-position: top;
+position: relative;
+display: inline-block;
+}
+.dropdown-content li {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display:;
+}
+.dropbtn {
+background-color: #3498DB;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+}
+
+.content {
+display: flex;
+
 background-color: #C2A98D;
 border-radius: 3%;
-
-}
-
-.border {
-	display: inline-block;
-
-width: 100%;
-margin: 20px
-}
-.reviews {
-	display: inline-block;
-	height: 150px;
-width: 40%;
-padding-top: 10%;
-float: right;
-margin-right: 10%;
-
+border-color: red;
+border-style: solid;
 }
 .menu-options {
 text-align: center;
@@ -94,31 +94,33 @@ margin: 35px;
 
 }
 
+.border {
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+}
+
+#reviews {
+flex-basis: 300px;
+
+}
+
+
 #image2 {
-	width: 35%;
-	display: inline-block;
-	margin-left: 10px;
-	margin-top: 20px;
-
+	height: 400px;
+	width: 550px;
+	align-self: flex-end;
 }
-button {
-	margin: 10px 10px 10px 40px;
-}
-
-#menu {
-text-align: center;
-border-width: 3px;
-
-background-color: #C2A98D;
-}
-
-input {
-	margin-left: 20px;
+@media (mmax-width: 600px) {
+	#image2 {
+		flex-shrink: 1;
+	}
 }
 
 #map{
-	display: block;
-	margin: auto;
-	width:750px;
-	height:550px;
+display: block;
+margin: auto;
+width:750px;
+height:550px;
 }

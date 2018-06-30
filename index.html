@@ -8,11 +8,14 @@
 </head>
 
 <body>
+	<!-- Restaurant name and tagline -->
 	<div id="header">
 		<h1>Dapper D's Diner</h1>
 		<p class="main">"Home of the Happy Belly"</p>
 	</div>
-	<div>
+
+	<!--Restautant image -->
+	<div class="image-container">
 		<img src="images/inside.jpg" alt="inside of restaurant" id="image1">
 	</div>
 
@@ -20,6 +23,7 @@
 		<h2 id="menu">Reservations</h2>
 	</div>
 
+	<!--reservation maker and current reservations-->
 	<div class="box">
 		
 		<div class="content">
@@ -30,6 +34,7 @@
 						<label for="name">Name:</label>
 						<input type="text" id="name" name="res_name" placeholder="Enter your name">
 					</div>
+
 					<div class="dropdown">
 						<button class="dropbtn"> Select A Day </button>
 						<div class="dropdown-content">
@@ -42,8 +47,9 @@
 								<li>Friday</li>
 								<li>Saturday</li>
 							</ul>
-						</div>				
+						</div>										
 					</div>
+					
 					<div>
 						<button>Confirm Reservation</button>
 					</div>
@@ -73,57 +79,54 @@
 	<h2 id="menu">
 		Come Dine with Us
 	</h2>
-</div>
-
-<div>
-	<div id="map">
-	</div>
-</div>
 
 
-
-<div class="border">
-	<div id="reviews">
-		<img src="images/laugh.jpg" alt="child eats" id="image2">
-		<div class="existing">
-
-			<div class="reviews">
-				<h3>Customer Reviews</h3>
-				<p id="cust-reviews">
-
-					“Big lettuce, big carrots, tomatoes like volleyballs.”
-					— Jerry Seinfeld, on The BIG 
-				</p>
-
-			</div>
+	<div>
+		<div id="map">
 		</div>
 	</div>
-</div>
 
-<div>
-	<a href="https://www.freepik.com/free-photos-vectors/background">
-		Background image created by Mrsiraphol - Freepik.com
-	</a>
-</div>
 
-<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+<!--Review section w/ image-->
+	<div class="border">
+		<div id="reviews">
+			<img src="images/laugh.jpg" alt="child eats" id="image2">
+		</div>
 
-<!-- jQuery -->
-<script src="js/jquery-3.0.0.js"></script>
-<!-- bootstrap js -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!-- handlebars -->
-<script src="js/handlebars-v4.0.11.js"></script>
-<!-- custom js -->
-<script src="js/main.js"></script>
+		<div class="review">
+			<h3>Customer Reviews</h3>
+			<p id="cust-reviews">
 
-<!-- google maps -->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2kBYMponeI7uzWB-k5zpac9oCWN8LtA0&callback=initMap"
-type="text/javascript"></script>
+				“Big lettuce, big carrots, tomatoes like volleyballs.”
+				— Jerry Seinfeld, on The BIG 
+			</p>
+		</div>
+	</div>
+	
+
+	<div>
+		<a href="https://www.freepik.com/free-photos-vectors/background">
+			Background image created by Mrsiraphol - Freepik.com
+		</a>
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+
+	<!-- jQuery -->
+	<script src="js/jquery-3.0.0.js"></script>
+	<!-- bootstrap js -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- handlebars -->
+	<script src="js/handlebars-v4.0.11.js"></script>
+	<!-- custom js -->
+	<script src="js/main.js"></script>
+
+	<!-- google maps -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2kBYMponeI7uzWB-k5zpac9oCWN8LtA0&callback=initMap"
+	type="text/javascript"></script>
 
 </body>
 </html>
-
 
 
 
