@@ -4,6 +4,7 @@ font-family: Papyrus;
 background-color: #E4D2BE;
 }
 
+/*Dapper D header and image*/
 #header {
 display: flex;
 flex-direction: column;
@@ -37,36 +38,61 @@ max-height: 500px;
 
 
 
-
+/*Reservation maker and current reservations*/
 .box {
 display: flex;
 justify-content: space-around;
+height: 350px;
+}
+
+/*reservation maker*/
+.reservation {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+background-color: #C2A98D;
+border-radius: 3%;
+border-color: red;
+border-style: solid;
+}
+
+.menu-options {
+
+font-weight: bold;
 }
 
 
-.dropdown-content {
-display: ;
-position: absolute;
-background-color: #f9f9f9;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
-gi
-}
-
-.dropbtn:hover, .dropbtn:focus {
-background-color: #2980B9;
-}
 .dropdown {
 
 position: relative;
 display: inline-block;
 }
+.dropbtn:hover, .dropbtn:focus {
+background-color: #2980B9;
+}
+
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+
+}
+
+
+li:hover, li:focus {
+	color: black;
+	list-style-type: none;
+	background-color: #2980B9;
+}
+
 .dropdown-content li {
-color: black;
+list-style-type: none;
 padding: 12px 16px;
-text-decoration: none;
-display:;
 }
 .dropbtn {
 background-color: #3498DB;
@@ -77,23 +103,34 @@ border: none;
 cursor: pointer;
 }
 
-.content {
+/*existing reservations*/
+.content { /*can this be added to the reservation class?*/
 display: flex;
-
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
 background-color: #C2A98D;
 border-radius: 3%;
 border-color: red;
 border-style: solid;
-}
-.menu-options {
-text-align: center;
-font-weight: bold;
-}
-label{
-margin: 35px;
 
 }
 
+/*map*/
+#map{
+display: block;
+margin: auto;
+width:750px;
+height:550px;
+}
+
+.show {
+	display: block;
+
+}
+
+
+/*review section w/ image*/
 .border {
 display: flex;
 justify-content: space-around;
@@ -118,9 +155,3 @@ flex-basis: 300px;
 	}
 }
 
-#map{
-display: block;
-margin: auto;
-width:750px;
-height:550px;
-}

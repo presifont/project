@@ -23,7 +23,7 @@ function initMap() {
 };
 
 $('.dropbtn').on('click', function(e) {
-	//e.preventDefault();
-
+	e.preventDefault();
+	$('.dropdown-content').toggleClass("show");
 })
 

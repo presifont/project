@@ -26,41 +26,37 @@
 	<!--reservation maker and current reservations-->
 	<div class="box">
 		
-		<div class="content">
-			<p class="menu-options">Make a Reservation</p>
-			<div>		
-				<form>
-					<div>
-						<label for="name">Name:</label>
-						<input type="text" id="name" name="res_name" placeholder="Enter your name">
-					</div>
-
-					<div class="dropdown">
-						<button class="dropbtn"> Select A Day </button>
-						<div class="dropdown-content">
-							<ul>
-								<li>Sunday</li>
-								<li>Monday</li>
-								<li>Tuesday</li>
-								<li>Wednesday</li>
-								<li>Thursday</li>
-								<li>Friday</li>
-								<li>Saturday</li>
-							</ul>
-						</div>										
-					</div>
-					
-					<div>
-						<button>Confirm Reservation</button>
-					</div>
-				</form>
+		<form div class="reservation"> 
+			<h3>Make a Reservation</h3> 
+			<div>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="res_name" placeholder="Enter your name">
 			</div>
-		</div>
 
+			<div class="dropdown">
+				<button class="dropbtn"> Select A Day </button>
+				<div class="dropdown-content">
+					<ul>
+						<li>Sunday</li>
+						<li>Monday</li>
+						<li>Tuesday</li>
+						<li>Wednesday</li>
+						<li>Thursday</li>
+						<li>Friday</li>
+						<li>Saturday</li>
+					</ul>
+				</div>										
+			</div>
+
+
+			<button>Confirm Reservation</button>
+
+		</form>
 		
-		<div class="content existing">
-			<p class="menu-options">Existing Reservations</p>
+		<!--Existing reservatiions-->
 
+		<div class="content">
+			<p class="menu-options">Existing Reservations</p>
 			<div>
 				<div>
 					<table>
@@ -76,6 +72,7 @@
 
 	</div>
 
+	<!--Map title and map-->
 	<h2 id="menu">
 		Come Dine with Us
 	</h2>
@@ -87,7 +84,7 @@
 	</div>
 
 
-<!--Review section w/ image-->
+	<!--Review section w/ image-->
 	<div class="border">
 		<div id="reviews">
 			<img src="images/laugh.jpg" alt="child eats" id="image2">
