@@ -21,9 +21,30 @@ function initMap() {
 });
 	
 };
-
+/*
+//display day selection menu when user clicks "select a day"
 $('.dropbtn').on('click', function(e) {
 	e.preventDefault();
 	$('.dropdown-content').toggleClass("show");
-})
+});
+
+//hides day selection when a day is selected
+$('li').on('click', function(e) {
+	e.preventDefault();
+	$('.dropdown-content').toggleClass("show");
+});
+*/
+
+$('form').on('submit', function(e) {
+e.preventDefault();
+var userInput = {
+	name: $('#name').val(),
+	day: $('#day').val()
+
+};
+var source = $('#currentReservations').html();
+var template= Handlebars.compile(source);
+var newListItemHTML = template(userInput);
+$('#current-res').append(newListItemHTML)
+});
 

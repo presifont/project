@@ -49,72 +49,34 @@ height: 350px;
 .reservation {
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+justify-content: flex-start;
 align-items: center;
 background-color: #C2A98D;
 border-radius: 3%;
 border-color: red;
 border-style: solid;
-}
-
-.menu-options {
-
-font-weight: bold;
+width: 30%
 }
 
 
-.dropdown {
-
-position: relative;
-display: inline-block;
-}
-.dropbtn:hover, .dropbtn:focus {
-background-color: #2980B9;
-}
 
 
-.dropdown-content {
-display: none;
-position: absolute;
-background-color: #f9f9f9;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
-
-}
 
 
-li:hover, li:focus {
-	color: black;
-	list-style-type: none;
-	background-color: #2980B9;
-}
-
-.dropdown-content li {
-list-style-type: none;
-padding: 12px 16px;
-}
-.dropbtn {
-background-color: #3498DB;
-color: white;
-padding: 16px;
-font-size: 16px;
-border: none;
-cursor: pointer;
-}
 
 /*existing reservations*/
 .content { /*can this be added to the reservation class?*/
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+justify-content: flex-start;
 align-items: center;
 background-color: #C2A98D;
 border-radius: 3%;
 border-color: red;
 border-style: solid;
-
+width: 30%
 }
+
 
 /*map*/
 #map{

@@ -26,48 +26,55 @@
 	<!--reservation maker and current reservations-->
 	<div class="box">
 		
-		<form div class="reservation"> 
-			<h3>Make a Reservation</h3> 
-			<div>
+			
+			<form action="" class="reservation"> 
+				<h3>Make a Reservation</h3> 
+				<!--enter name-->
 				<label for="name">Name:</label>
-				<input type="text" id="name" name="res_name" placeholder="Enter your name">
-			</div>
+				<input type="text" id="name" placeholder="Enter your name">
 
-			<div class="dropdown">
-				<button class="dropbtn"> Select A Day </button>
-				<div class="dropdown-content">
-					<ul>
-						<li>Sunday</li>
-						<li>Monday</li>
-						<li>Tuesday</li>
-						<li>Wednesday</li>
-						<li>Thursday</li>
-						<li>Friday</li>
-						<li>Saturday</li>
-					</ul>
-				</div>										
-			</div>
+				<!--<button class="dropbtn"> Select A Day </button>-->
+
+				<select class="dropdown-content" name="day" id="day">
+					<option value="" disabled selected>Select a Day</option>
+					<option value="Sunday">Sunday</option>
+					<option value="Monday">Monday</option>
+					<option value="Tuesday">Tuesday</option>
+					<option value="Wednesday">Wednesday</option>
+					<option value="Thursday">Thursday</option>
+					<option value="Friday">Friday</option>
+					<option value="Saturday">Saturday</option>
+				</select>
 
 
-			<button>Confirm Reservation</button>
 
-		</form>
+
+				<button type="submit">Confirm Reservation</button>
+
+			</form>
 		
 		<!--Existing reservatiions-->
 
 		<div class="content">
 			<p class="menu-options">Existing Reservations</p>
-			<div>
-				<div>
-					<table>
-						<thead>
-							<th>Person</th>
-							<th>Day</th>
-						</thead>
-						<tbody> [ form data will publish here ] </tbody>
-					</table>
-				</div>
-			</div>
+			
+			<table>
+				<thead>
+					<th>Person</th>
+					<th>Day</th>
+				</thead>
+				<tbody id="current-res"> 
+					<script id="currentReservations" type="text/x-handlebars-template">
+						<tr>
+							<td>{{name}} :</td>>
+							<td>{{day}}</td>
+						</tr>
+
+					</script>
+				</tbody>
+			</table>
+
+			
 		</div>
 
 	</div>
@@ -99,7 +106,7 @@
 			</p>
 		</div>
 	</div>
-	
+
 
 	<div>
 		<a href="https://www.freepik.com/free-photos-vectors/background">
